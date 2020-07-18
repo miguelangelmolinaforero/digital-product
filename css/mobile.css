@@ -1,0 +1,17 @@
+@media (max-width:768px) {
+    .products {
+        display: block;
+        background-image: none;
+        justify-content: center;
+        padding: 6.2%;
+    }
+    .product {
+        margin: 20px 40px;
+    }
+    .features {
+        display: block;
+    }
+    .mentions-content {
+        display: block;
+    }
+}

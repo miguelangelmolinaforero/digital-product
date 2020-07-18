@@ -1,0 +1,81 @@
+.payment-module {
+    display: grid;
+    grid-template-columns: 30% 40%;
+    gap: 15px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 10px;
+    height: 50vh;
+    box-shadow: var(--box);
+}
+
+.selected-product {
+    text-align: center;
+    padding: 15px;
+}
+
+.selected-product-details h3 {
+    text-align: center;
+    margin: 5px auto 5px auto;
+    padding: 7px;
+    background: var(--footer-color);
+    color: #fff;
+    width: 60%;
+    border-radius: 30px;
+}
+
+.payment-form {
+    padding: 15px;
+}
+
+.payment-form label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-data {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 198, 198);
+    box-sizing: border-box;
+}
+
+.payment-form .main-button {
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.windows-payment {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wp1 a {
+    color: rgb(88, 192, 67);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.wp2 a {
+    color: rgb(199, 17, 17);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .payment-module {
+        grid-template-columns: 1fr;
+        margin: 25px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,344 @@
+/* background: -webkit-linear-gradient(top, rgba(32,124,229,1) 0%, rgba(32,124,229,1) 29%, rgba(99,169,235,1) 100%); */
+
+
+/* Variables */
+
+:root {
+    --nav-color: -webkit-linear-gradient(left, rgba(20, 62, 153, 1) 0%, rgba(20, 62, 153, 1) 28%, rgba(0, 69, 67, 1) 86%, rgba(0, 69, 67, 1) 100%);
+    --box: 0px 0px 15px rgb(107, 107, 107);
+    --footer-color: -webkit-linear-gradient(left, rgba(32, 175, 227, 1) 0%, rgba(32, 175, 227, 1) 0%, rgba(13, 85, 227, 1) 49%, rgba(5, 1, 84, 1) 100%);
+    --font: 'Didact Gothic', sans-serif;
+}
+
+
+/* inicio de hoja de estilos */
+
+
+/* estilos para html y body  */
+
+html,
+body {
+    margin: 0;
+    font-family: var(--font);
+}
+
+
+/* estilos para el encabezado y barra de navegación */
+
+.header {
+    background: var(--nav-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    margin: 10px;
+}
+
+.menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    /* transition: .3s; */
+    transition-duration: .3s;
+    color: rgb(224, 224, 224);
+}
+
+
+/* estilos para main section */
+
+.hero {
+    height: 200px;
+    /* border: 1px solid red; */
+    padding: 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h2 {
+    font-family: 'Segoe UI';
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    padding: 0 15% 0 10%;
+    font-size: 40px;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+    background-color: #ffffff36;
+    margin-right: 160px;
+    vertical-align: middle;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+    filter: opacity(97%) blur(0px);
+}
+
+
+/* estilos para la sección products */
+
+.products {
+    font-family: 'Segoe UI';
+    /* max-height: -200px; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 20%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-image: url("../images/thumb2-4k-geometric-shapes-blue-background-splinters-creative.jpg");
+    /* background-size: 100vw; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product {
+    background-color: #fff;
+    display: flex;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--box);
+    padding-bottom: 4%;
+}
+
+.product-details img {
+    margin-top: -15%;
+    width: 80%;
+    height: 80%;
+}
+
+.product-description {
+    text-align: start;
+    padding: 0 25px 20px 25px;
+}
+
+.main-button {
+    padding: 10px 15%;
+    background-color: rgb(216, 47, 47);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.main-button:hover {
+    border: 1px solid;
+    color: rgb(216, 47, 47);
+    background: white;
+    transition-duration: .3s;
+}
+
+
+/* estilos para la seccion features */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(228, 227, 227);
+}
+
+.feature-content {
+    width: 20%;
+    padding: 2%;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.feature-image img {
+    width: 60%;
+    height: 60%;
+}
+
+.feature-details {
+    text-align: start;
+}
+
+
+/* estilos para la sección mentions */
+
+.mentions h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 32px;
+}
+
+.mentions-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.mentions-items {
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    overflow: hidden;
+    width: 23%;
+    box-shadow: var(--box);
+}
+
+.mentions-items:hover {
+    opacity: .8;
+}
+
+.mention-image {
+    margin: 0;
+    padding: 25%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+.mention-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mention-details {
+    background-color: #fff;
+    margin: 16px 18px;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    background: var(--footer-color);
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.footer span {
+    padding: 20px 5px;
+    margin: 0 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* sección del archivo de Términos y Condiciones */
+
+.terms-section {
+    margin: 30px;
+}
+
+
+/* contenedor general para mantener márgenes laterales 
+dentro de toda la página */
+
+.container {
+    background-color: inherit;
+    display: inherit;
+    align-items: inherit;
+    max-width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    justify-content: inherit;
+}
+
+
+/* Inicio de Media Query */
+
+@media (max-width:768px) {
+    .header {
+        display: block;
+    }
+    .logo {
+        margin: 0;
+        text-align: center;
+    }
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    .menu ul {
+        padding: 15px;
+    }
+    .hero img {
+        filter: opacity(97%) blur(.9px);
+    }
+    .hero h2 {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0 12px 0px 0px;
+    }
+    .container {
+        width: 100%;
+        justify-content: inherit;
+    }
+    .products {
+        display: block;
+        /* background-image: none; */
+        text-align: center;
+        /* width: 100%; */
+        margin: 0 auto;
+        padding: 0;
+        border-radius: 0;
+    }
+    .product {
+        margin: 70px auto;
+        width: 75%;
+    }
+    .features {
+        display: block;
+        text-align: center;
+    }
+    .feature-content {
+        margin: 25px auto;
+        width: 75%;
+    }
+    .feature-image {
+        margin: 0;
+    }
+    .mentions-content {
+        display: block;
+    }
+    .mentions-items {
+        margin: 25px auto;
+        width: 75%;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+    }
+    .footer span {
+        display: block;
+    }
+}
+
+
+/* animaciones */

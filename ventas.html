@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aplicativo web de comercio de computadores" />
+    <link rel="stylesheet" href="css/ventas.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="images/wallhaven-4ygrpk.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet" />
+    <title>Proyecto de Aplicación Web</title>
+</head>
+
+<body>
+    <header class="header fadeDown">
+        <figure class="logo">
+            <a href="index.html">
+                <img src="images/ask_question_query_demand_interrogate_icon_146778.png" width="45" height="45" alt="">
+            </a>
+        </figure>
+        <nav class="menu">
+            <ul><a href="#">FAQs</a></ul>
+            <ul><a href="producto.html">Producto y Descripción</a></ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="payment-module">
+            <div class="selected-product item">
+                <figure class="selected-product-image">
+                    <img src="images/idea_imagination_estimate_concept_design_icon_146785.png" width="100" height="100" alt="">
+                </figure>
+                <div class="selected-product-details">
+                    <h2>Producto</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas tempora dolorum nulla adipisci esse officiis dolor optio dignissimos nemo minima?</p>
+                    <h3>Por solo $9.99</h3>
+                </div>
+            </div>
+            <section class="payment-form item">
+                <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QBATAP2U9MQL6" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre" name="name" id="nombre" class="form-data" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Ingresa tu e-mail" name="email" id="email" class="form-data" required>
+                    <label for="telefono">Teléfono</label>
+                    <input type="number" placeholder="Ingresa tu número" name="number" id="telefono" class="form-data" required>
+                    <input type="submit" class="main-button" name="submit" value="Confirmar Pago">
+                </form>
+                <div class="windows-payment">
+                    <h4 class="wp1" class="window-payment">
+                        <a href="exito.html">Ventana de pago exitoso</a>
+                    </h4>
+                    <h4 class="wp2" class="window-payment">
+                        <a href="fallo.html">Ventana de pago fallido</a>
+                    </h4>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span><a href="terms.html">Terminos y condiciones</a></span>
+            <span>✉ Contacto: <a href="mailto: miguelangelmolinaforero@gmail.com">miguelangelmolinaforero@gmail.com</a></span>
+            <span> Hecho con ❤ por Miguel Molina</span>
+        </div>
+    </footer>
+</body>
+
+</html>
